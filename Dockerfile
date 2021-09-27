@@ -11,6 +11,6 @@ RUN apt-get update && \
 
 WORKDIR /opt/zigbee2mqtt
 VOLUME /opt/zigbee2mqtt/data
-VOLUME /dev/zigbee
+VOLUME /dev/ttyACM0
 
 CMD npm start
